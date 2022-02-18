@@ -1,4 +1,4 @@
 
-const ButtonRound = ({ text: btnText }: any) => <button>{btnText}</button>;
+const AppButtonRound = ({ text: btnText }: any) => <button>{btnText}</button>;
 
-export default ButtonRound
+export default AppButtonRound

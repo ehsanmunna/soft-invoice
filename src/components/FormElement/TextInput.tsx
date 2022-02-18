@@ -1,4 +1,4 @@
 
-const TextInput = () => <input type="text" />;
+const AppTextInput = (props: any) => <input type="text" placeholder={props.placeholder} />;
 
-export default TextInput
+export default AppTextInput

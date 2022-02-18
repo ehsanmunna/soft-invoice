@@ -1,4 +1,4 @@
 
-const ButtonSecondary = ({ text: btnText }: any) => <button>{btnText}</button>;
+const AppButtonSecondary = ({ text: btnText }: any) => <button>{btnText}</button>;
 
-export default ButtonSecondary
+export default AppButtonSecondary

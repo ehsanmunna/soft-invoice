@@ -1,4 +1,4 @@
 
-const ButtonPrimary = ({ text: btnText }: any) => <button>{btnText}</button>;
+const AppButtonPrimary = ({ btnText }: any) => <button>{btnText}</button>;
 
-export default ButtonPrimary
+export default AppButtonPrimary
