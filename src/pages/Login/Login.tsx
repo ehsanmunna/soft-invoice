@@ -1,4 +1,5 @@
 import AppButtonPrimary from "../../components/Actions/PrimaryButton";
+import AppLink from "../../components/Common/Link";
 import AppTextInput from "../../components/FormElement/TextInput";
 import AppTextPassword from "../../components/FormElement/TextPassword";
 import AppLogo from "../../components/Media/Logo";
@@ -15,16 +16,13 @@ function Login() {
         </div>
         <div>
           <form>
-            <AppTextInput placeholder="first name"/>
-            <AppTextInput placeholder="last name"/>
             <AppTextInput placeholder="email/phone"/>
             <AppTextPassword placeholder="password"/>
-            <AppTextPassword placeholder="password confirm"/>
           </form>
-          <AppButtonPrimary btnText="Create Account"/>
+          <AppButtonPrimary btnText="Login"/>
         </div>
         <div>
-          <p>already registared? please login</p>
+          <p>Not registared? please <AppLink href="#" linkText="click here"/></p>
         </div>
       </>
     );
