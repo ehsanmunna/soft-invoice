@@ -1,8 +1,9 @@
+import AppTitle from "../../components/Typography/Title";
 
 function Registration() {
     return (
       <>
-        <h1>Registration Page</h1>
+        <AppTitle name={'Registration'} />
       </>
     );
   }
