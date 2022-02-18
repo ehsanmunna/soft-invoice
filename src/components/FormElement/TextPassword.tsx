@@ -1,5 +1,6 @@
+import TextField from "@mui/material/TextField";
 
 const AppTextPassword = (props: any) => 
-    <input type="password" placeholder={props.placeholder} />;
+    <TextField type="password" label={props.placeholder} variant="outlined" placeholder={props.placeholder} />;
 
 export default AppTextPassword
