@@ -16,8 +16,12 @@ function Login() {
         </div>
         <div>
           <form>
+            <div>
             <AppTextInput placeholder="email/phone"/>
+            </div>
+            <div>
             <AppTextPassword placeholder="password"/>
+            </div>
           </form>
           <AppButtonPrimary btnText="Login"/>
         </div>

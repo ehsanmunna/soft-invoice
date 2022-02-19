@@ -1,3 +1,4 @@
+import { Grid } from "@mui/material";
 import AppButtonPrimary from "../../components/Actions/PrimaryButton";
 import AppLink from "../../components/Common/Link";
 import AppTextInput from "../../components/FormElement/TextInput";
@@ -14,13 +15,28 @@ function Registration() {
         <div>
           <AppTitle name="Be a member"/>
         </div>
+        <Grid container spacing={2}>
+          <Grid item>munna</Grid>
+          <Grid item>imon</Grid>
+          <Grid item>sadiya</Grid>
+        </Grid>
         <div>
           <form>
-            <AppTextInput placeholder="first name"/>
-            <AppTextInput placeholder="last name"/>
-            <AppTextInput placeholder="email/phone"/>
-            <AppTextPassword placeholder="password"/>
-            <AppTextPassword placeholder="password confirm"/>
+            <div>
+              <AppTextInput placeholder="first name"/>
+              </div>
+            <div>
+              <AppTextInput placeholder="last name"/>
+              </div>
+            <div>
+              <AppTextInput placeholder="email/phone"/>
+              </div>
+            <div>
+              <AppTextPassword placeholder="password"/>
+              </div>
+            <div>
+              <AppTextPassword placeholder="password confirm"/>
+              </div>
           </form>
           <AppButtonPrimary btnText="Create Account"/>
         </div>
