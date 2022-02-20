@@ -16,27 +16,27 @@ function Registration() {
           <AppTitle name="Be a member"/>
         </div>
         <Grid container spacing={2}>
-          <Grid item>munna</Grid>
-          <Grid item>imon</Grid>
-          <Grid item>sadiya</Grid>
+          <Grid item>item 1</Grid>
+          <Grid item>item 2</Grid>
+          <Grid item>item 3</Grid>
         </Grid>
         <div>
           <form>
             <div>
               <AppTextInput placeholder="first name"/>
-              </div>
+            </div>
             <div>
               <AppTextInput placeholder="last name"/>
-              </div>
+            </div>
             <div>
               <AppTextInput placeholder="email/phone"/>
-              </div>
+            </div>
             <div>
               <AppTextPassword placeholder="password"/>
-              </div>
+            </div>
             <div>
               <AppTextPassword placeholder="password confirm"/>
-              </div>
+            </div>
           </form>
           <AppButtonPrimary btnText="Create Account"/>
         </div>
