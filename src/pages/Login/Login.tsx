@@ -5,7 +5,7 @@ import AppTextPassword from "../../components/FormElement/TextPassword";
 import AppLogo from "../../components/Media/Logo";
 import AppTitle from "../../components/Typography/Title";
 
-function Login() {
+function LoginPage() {
     return (
       <>
         <div>
@@ -32,5 +32,5 @@ function Login() {
     );
   }
   
-  export default Login;
+  export default LoginPage;
   

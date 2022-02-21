@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import Login from './Login';
+import LoginPage from './Login';
 
 test('render login header', () => {
-    render(<Login />);
-    const linkElement = screen.getByText(/Login Page/i);
+    render(<LoginPage />);
+    const linkElement = screen.getByText(/Login to your account/i);
     expect(linkElement).toBeInTheDocument();
   });
