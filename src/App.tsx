@@ -6,7 +6,7 @@ import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<LoginPage />} />

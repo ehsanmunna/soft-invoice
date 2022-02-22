@@ -1,13 +1,10 @@
-import { Box, Container, Grid } from "@mui/material";
-import AppButtonPrimary from "../../components/Actions/PrimaryButton";
 import AppLink from "../../components/Common/Link";
 import AppTextInput from "../../components/FormElement/TextInput";
 import AppTextPassword from "../../components/FormElement/TextPassword";
+import FormBox from "../../components/Layout/FormBox";
 import FormContainer from "../../components/Layout/FormContainer";
 import AppLogo from "../../components/Media/Logo";
 import AppTitle from "../../components/Typography/Title";
-
-const padding = 10;
 
 function Registration() {
   return (
@@ -15,33 +12,30 @@ function Registration() {
       <div>
         <AppLogo src="" alt="Logo" />
       </div>
-      <div>
-        <AppTitle name="Be a member" />
-      </div>
-      
       <FormContainer
+        formHeadLine="Be a member"
         formBody={(
           <>
-          <Box style={{ padding: padding }}>
+          <FormBox>
             <AppTextInput placeholder="first name" />
-          </Box>
-          <Box style={{ padding: padding }}>
+          </FormBox>
+          <FormBox>
           <AppTextInput placeholder="last name" />
-          </Box>
-          <Box style={{ padding: padding }}>
+          </FormBox>
+          <FormBox>
             <AppTextInput placeholder="email/phone" />
-          </Box>
-          <Box style={{ padding: padding }}>
+          </FormBox>
+          <FormBox>
             <AppTextPassword placeholder="password" />
-          </Box>
-          <Box style={{ padding: padding }}>
+          </FormBox>
+          <FormBox>
             <AppTextPassword placeholder="password confirm" />
-          </Box>
+          </FormBox>
           </>
         )}
         buttonText="Create Account"
         formExtra={(
-          <p>already registared? please <AppLink href="#" linkText="login" /></p>
+          <p>already registared? please <AppLink href="/login" linkText="login" /></p>
         )}
       />
     </>
