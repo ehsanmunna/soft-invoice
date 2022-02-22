@@ -1,13 +1,10 @@
-import { Box } from "@mui/material";
-import AppButtonPrimary from "../../components/Actions/PrimaryButton";
 import AppLink from "../../components/Common/Link";
 import AppTextInput from "../../components/FormElement/TextInput";
 import AppTextPassword from "../../components/FormElement/TextPassword";
+import FormBox from "../../components/Layout/FormBox";
 import FormContainer from "../../components/Layout/FormContainer";
 import AppLogo from "../../components/Media/Logo";
 import AppTitle from "../../components/Typography/Title";
-
-const padding = 10;
 
 function LoginPage() {
   return (
@@ -15,23 +12,21 @@ function LoginPage() {
       <div>
         <AppLogo src="" alt="Logo" />
       </div>
-      <div>
-        <AppTitle name="Login to your account" />
-      </div>
       <FormContainer
+        formHeadLine="Login to your account"
         formBody={(
           <>
-            <Box style={{ padding: padding }}>
+            <FormBox>
               <AppTextInput placeholder="email/phone" />
-            </Box>
-            <Box style={{ padding: padding }}>
+            </FormBox>
+            <FormBox>
               <AppTextPassword placeholder="password" />
-            </Box>
+            </FormBox>
           </>
         )}
         buttonText="Login"
         formExtra={(
-          <p>Not registared? please <AppLink href="#" linkText="click here" /></p>
+          <p>Not registared? please <AppLink href="/reg" linkText="click here" /></p>
         )}
       />
     </>
