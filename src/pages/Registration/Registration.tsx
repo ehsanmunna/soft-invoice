@@ -4,7 +4,6 @@ import AppTextPassword from "../../components/FormElement/TextPassword";
 import FormBox from "../../components/Layout/FormBox";
 import FormContainer from "../../components/Layout/FormContainer";
 import AppLogo from "../../components/Media/Logo";
-import AppTitle from "../../components/Typography/Title";
 
 function Registration() {
   return (

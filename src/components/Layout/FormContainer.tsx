@@ -2,9 +2,11 @@ import { Container } from "@mui/material";
 import AppButtonPrimary from "../Actions/PrimaryButton";
 import AppTitle from "../Typography/Title";
 import FormBox from "./FormBox";
+import PageContainer from "./PageContainer";
 
 const FormContainer = (props: any) => {
-  return (<Container maxWidth="sm">
+  return (
+  <PageContainer>
     <div>
       <div style={{textAlign: 'center'}}>
         <AppTitle name={props.formHeadLine} />
@@ -20,7 +22,8 @@ const FormContainer = (props: any) => {
     <FormBox>
       {props.formExtra}
     </FormBox>
-  </Container>)
+  </PageContainer>
+  )
 };
 
 export default FormContainer
