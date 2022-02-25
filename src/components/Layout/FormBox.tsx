@@ -4,7 +4,7 @@ import { appStyle } from "../../Shared/global.const";
 const FormBox = (props: any) => {
     return (<Box style={{ padding: appStyle.forms_padding }}>
       {props.children}
-    </Box>)
-};
+    </Box>
+)};
 
 export default FormBox
