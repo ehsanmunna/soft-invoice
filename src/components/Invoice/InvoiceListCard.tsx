@@ -1,17 +1,27 @@
 import { Box } from "@mui/material"
+import { IInvoice } from "../../interface/invoice/IInvoice"
 import ListCard from "../Common/ListCardComponent"
 
+const invStyle = {
+    display: { display: 'flex' },
+    flow: { flexGrow: 1 },
+    fontWeight: { fontWeight: 700 },
+    date: { fontStyle: "italic", color: '#606060' },
+    amount: { color: '#393939', fontSize: 24, fontWeight: 700 }
+}
 
-const InvoiceListCard = () => {
+const InvoiceListCard = (props: IInvoice) => {
     return (
         <ListCard>
-            <Box sx={{ display: 'flex' }}>
-                <Box sx={{ flexGrow: 1 }}>
-                    <div style={{fontWeight: 700}}>Invoice List Item</div>
-                    <div style={{fontStyle: "italic", color: '#606060'}}>27 Dec, 2021</div>
+            <Box sx={invStyle.display}>
+                <Box sx={invStyle.flow}>
+                    <div style={invStyle.fontWeight}>{props.name}</div>
+                    <div style={invStyle.date}>{props.date}</div>
                 </Box>
                 <Box>
-                    <div>250</div>
+                    <div style={invStyle.amount}>
+                        {props.amount}
+                    </div>
                 </Box>
             </Box>
         </ListCard>
