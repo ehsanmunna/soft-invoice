@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import AppButtonPrimary from "../../components/Actions/PrimaryButton";
 import AppTable from "../../components/Common/Table";
 import AppNumberInput from "../../components/FormElement/NumberInput";
+import AppTextArea from "../../components/FormElement/TextArea";
 import AppTextInput from "../../components/FormElement/TextInput";
 import CustomerInfo from "../../components/Invoice/CustomerInfo";
 import InvoiceHead from "../../components/Invoice/InvoiceHead";
@@ -40,13 +41,16 @@ function InvoiceCreatePage() {
           <AppTableContainer subtitle="Selected Items">
             <AppTable/>
           </AppTableContainer>
-          <Box>
+          <Box style={{display: 'flex'}}>
             <Box>
-              
+              <AppTextArea label="Note"/>
             </Box>
             <Box>
               <InvoiceTotalSummery grossTotal={500} discount={50} netTotal={450}/>
             </Box>
+          </Box>
+          <Box>
+            <AppButtonPrimary btnText="create invoice" />
           </Box>
         </>
       </PageContainer>
