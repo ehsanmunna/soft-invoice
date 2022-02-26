@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import AppButtonPrimary from "../../components/Actions/PrimaryButton";
+import AppButtonSecondary from "../../components/Actions/SecondaryButton";
 import AppTable from "../../components/Common/Table";
 import AppTextArea from "../../components/FormElement/TextArea";
 import CustomerInfo from "../../components/Invoice/CustomerInfo";
@@ -51,8 +52,9 @@ function InvoiceCreatePage() {
               <InvoiceTotalSummery grossTotal={500} discount={50} netTotal={450}/>
             </Box>
           </Box>
-          <Box>
-            <AppButtonPrimary btnText="create invoice" />
+          <Box sx={{ display: 'flex', gap: 5 }}>
+            <AppButtonSecondary btnText="Back" />
+            <AppButtonPrimary link="/invoice-print" btnText="create invoice" />
           </Box>
         </>
       </PageContainer>

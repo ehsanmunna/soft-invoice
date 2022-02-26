@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import AppButtonPrimary from "../../components/Actions/PrimaryButton";
+import AppButtonSecondary from "../../components/Actions/SecondaryButton";
 import AppNumberInput from "../../components/FormElement/NumberInput";
 import AppTextInput from "../../components/FormElement/TextInput";
 import CustomerInfo from "../../components/Invoice/CustomerInfo";
@@ -48,9 +49,9 @@ function InvoiceItemPage() {
             )}
             buttonExtra={(
               <Box sx={{ display: 'flex', gap: 5 }}>
-                <AppButtonPrimary btnText="Back" />
+                <AppButtonSecondary btnText="Back" />
                 <AppButtonPrimary btnText="add more" />
-                <AppButtonPrimary btnText="Save&nbsp;&amp;&nbsp;Next" />
+                <AppButtonPrimary link="/invoice-create" btnText="Save&nbsp;&amp;&nbsp;Next" />
               </Box>
             )}
           />

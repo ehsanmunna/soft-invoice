@@ -40,12 +40,12 @@ function InvoicePrintPage() {
               <div>Date:</div>
             </Box>
           </Box>
-          <AppTableContainer>
+          <AppTableContainer subtitle="Items">
             <AppTable/>
           </AppTableContainer>
           <Box style={{display: 'flex', justifyContent: 'space-between', ..._paddingBottom}}>
             <Box>
-              <AppTextArea label="Note"/>
+              Invoice Note
             </Box>
             <Box>
               <InvoiceTotalSummery grossTotal={500} discount={50} netTotal={450}/>

@@ -22,7 +22,7 @@ function HomePage() {
         <AppTitle name="Welcome to Invoice" />
         <div>
           <AppSubTitle name="Recent Invoice list" />
-          <AppButtonRound link="./invoice-customer" linktext="Add" />
+          <AppButtonRound link="/invoice-customer" linktext="Add" />
         </div>
         {
           invoiceList.map(item => {
