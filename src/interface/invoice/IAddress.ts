@@ -7,3 +7,7 @@ export interface IAddress{
 export interface ICompanyAddress extends IAddress{
     companyName: string;
 }
+
+export interface ICustomerAddress extends IAddress{
+    customerName: string;
+}
