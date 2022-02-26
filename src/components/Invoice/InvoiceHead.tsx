@@ -10,19 +10,17 @@ const invStyle = {
 
 const InvoiceHead = (props: ICompanyAddress) => {
     return (
-        <PageContainer>
-            <Box sx={invStyle.display}>
-            <Box style={{width: '100%'}}>
-                <AppTitle direction="left" name="Invoice"/>
+        <Box sx={invStyle.display}>
+            <Box style={{ width: '100%' }}>
+                <AppTitle direction="left" name="Invoice" />
             </Box>
-            <Box style={{width: '100%'}}>
-                <AppSubTitle name={props.companyName}/>
+            <Box style={{ width: '100%' }}>
+                <AppSubTitle name={props.companyName} />
                 <div>{props.addressLine1}</div>
                 <div>{props.phone}</div>
                 <div>{props.email}</div>
             </Box>
         </Box>
-        </PageContainer>
     )
 }
 

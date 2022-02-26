@@ -12,6 +12,10 @@ import FormContainer from "../../components/Layout/FormContainer";
 import PageContainer from "../../components/Layout/PageContainer";
 import AppTableContainer from "../../components/Layout/TableContainer";
 
+const _paddingBottom = {
+  paddingBottom: 10
+};
+
 function InvoiceCreatePage() {
   
   return (
@@ -24,7 +28,7 @@ function InvoiceCreatePage() {
             phone="017xxxxxxxx"
             email="aaa@gmail.com"
           />
-          <Box>
+          <Box style={{display: 'flex', justifyContent: 'space-between', ..._paddingBottom}}>
             <Box>
               <CustomerInfo 
                 customerName="Customer Name"
@@ -41,7 +45,7 @@ function InvoiceCreatePage() {
           <AppTableContainer subtitle="Selected Items">
             <AppTable/>
           </AppTableContainer>
-          <Box style={{display: 'flex'}}>
+          <Box style={{display: 'flex', justifyContent: 'space-between', ..._paddingBottom}}>
             <Box>
               <AppTextArea label="Note"/>
             </Box>

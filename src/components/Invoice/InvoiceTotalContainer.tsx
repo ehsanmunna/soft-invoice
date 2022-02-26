@@ -3,7 +3,7 @@ import { IInvoiceTotalSummery } from "../../interface/invoice/IInvoice"
 
 const InvoiceTotalSummery = (props: IInvoiceTotalSummery) => {
     return (
-        <Box style={{ width: '100%' }}>
+        <Box style={{ width: '100%', textAlign: 'right' }}>
             <div>Gross Total: {props.grossTotal}</div>
             <div>Discount: {props.discount}</div>
             <div>Net Total: {props.netTotal}</div>

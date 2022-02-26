@@ -9,9 +9,6 @@ import FormContainer from "../../components/Layout/FormContainer";
 import PageContainer from "../../components/Layout/PageContainer";
 
 function InvoiceItemPage() {
-  
-  // const today = new Date().toDateString();
-  
   return (
     <>
       <PageContainer>
