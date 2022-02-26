@@ -41,7 +41,9 @@ function InvoiceCreatePage() {
             <AppTable/>
           </AppTableContainer>
           <Box>
-            <Box></Box>
+            <Box>
+              
+            </Box>
             <Box>
               <InvoiceTotalSummery grossTotal={500} discount={50} netTotal={450}/>
             </Box>
