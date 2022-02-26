@@ -12,7 +12,7 @@ const _paddingBottom = {
   paddingBottom: 10
 };
 
-function InvoiceCreatePage() {
+function InvoicePrintPage() {
   
   return (
     <>
@@ -40,7 +40,7 @@ function InvoiceCreatePage() {
               <div>Date:</div>
             </Box>
           </Box>
-          <AppTableContainer subtitle="Selected Items">
+          <AppTableContainer>
             <AppTable/>
           </AppTableContainer>
           <Box style={{display: 'flex', justifyContent: 'space-between', ..._paddingBottom}}>
@@ -52,7 +52,7 @@ function InvoiceCreatePage() {
             </Box>
           </Box>
           <Box>
-            <AppButtonPrimary btnText="create invoice" />
+            <AppButtonPrimary btnText="Print" />
           </Box>
         </>
       </PageContainer>
@@ -60,4 +60,4 @@ function InvoiceCreatePage() {
   );
 }
 
-export default InvoiceCreatePage;
+export default InvoicePrintPage;

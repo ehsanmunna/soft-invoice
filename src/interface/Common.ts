@@ -8,5 +8,5 @@ export interface Ilink{
 }
 
 export interface ITableContainer extends IPropsCommon{
-    subtitle: string;
+    subtitle?: string;
 }
