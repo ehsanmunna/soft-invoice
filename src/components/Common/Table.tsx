@@ -1,5 +1,5 @@
 
-const Table = (data: any) => (
+const AppTable = (data: any) => (
     <table>
         <thead>
             <tr>
@@ -14,4 +14,4 @@ const Table = (data: any) => (
     </table>
 );
 
-export default Table
+export default AppTable
