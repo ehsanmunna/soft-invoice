@@ -1,4 +1,5 @@
+import AppTextInput from "./TextInput";
 
-const NumberInput = () => <input type="number" />;
+const AppNumberInput = (props:any) => <AppTextInput {...props} type="number" />;
 
-export default NumberInput
+export default AppNumberInput

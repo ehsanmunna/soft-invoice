@@ -1,3 +1,13 @@
+import { Autocomplete, TextField } from "@mui/material";
+import { IAutocompleteOption } from "../../interface/Input";
 
-const Autocomplete = () => <input type="text" />;
-export default Autocomplete
+const AppAutocomplete = (props: IAutocompleteOption) => {
+    return (
+        <Autocomplete
+            disablePortal
+            options={props.options}
+            style={{ width: '100%' }}
+            renderInput={(params) => <TextField {...params} label={props.label} />}
+        />
+    )};
+export default AppAutocomplete

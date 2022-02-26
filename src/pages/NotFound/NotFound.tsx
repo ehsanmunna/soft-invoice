@@ -1,11 +1,14 @@
+import PageContainer from "../../components/Layout/PageContainer";
+import AppTitle from "../../components/Typography/Title";
 
 function NotFound() {
-    return (
-      <>
-        <h1>404 Not found!</h1>
-      </>
-    );
-  }
-  
-  export default NotFound;
-  
+  return (
+    <>
+      <PageContainer>
+        <AppTitle name="404 Not found!"/>
+      </PageContainer>
+    </>
+  );
+}
+
+export default NotFound;
