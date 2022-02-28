@@ -1,5 +1,6 @@
 import { Container } from "@mui/material";
 import AppButtonPrimary from "../Actions/PrimaryButton";
+import AppSubTitle from "../Typography/SubTitle";
 import AppTitle from "../Typography/Title";
 import FormBox from "./FormBox";
 import PageContainer from "./PageContainer";
@@ -8,14 +9,17 @@ const FormContainer = (props: any) => {
   return (
   <PageContainer>
     <div>
-      <div style={{textAlign: 'center'}}>
+      {props.formHeadLine ? <div style={{textAlign: 'center'}}>
         <AppTitle name={props.formHeadLine} />
-      </div>
+      </div> : <></>}
+      {props.formSubHeadLine ? 
+      <AppSubTitle name={props.formSubHeadLine} />
+      : <></>}
       <form>
         {props.formBody}
       </form>
       <FormBox>
-        <AppButtonPrimary btnText={props.buttonText} />
+        {props.buttonText ? <AppButtonPrimary btnText={props.buttonText} /> : <></>}
         {props.buttonExtra}
       </FormBox>
     </div>
