@@ -9,8 +9,8 @@ In the project directory, you can run:
 ### `npm start`
 
 ## Pages and route
-- Login "/login"
-- Registration "/registration"
+- Login "/inv-login"
+- Registration "/inv-registration"
 - Not Found "/*"
 - Home Page: "/"
 - Invoice Step 1: "/invoice-customer"
