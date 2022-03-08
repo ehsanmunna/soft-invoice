@@ -26,7 +26,7 @@ function LoginPage() {
         )}
         buttonText="Login"
         formExtra={(
-          <p>Not registared? please <AppLink href="/reg" linkText="click here" /></p>
+          <p>Not registared? please <AppLink href="/registration" linkText="click here" /></p>
         )}
       />
     </>

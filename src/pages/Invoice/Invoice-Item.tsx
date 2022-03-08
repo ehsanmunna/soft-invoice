@@ -51,7 +51,7 @@ function InvoiceItemPage() {
               <Box sx={{ display: 'flex', gap: 5 }}>
                 <AppButtonSecondary btnText="Back" />
                 <AppButtonPrimary btnText="add more" />
-                <AppButtonPrimary link="/invoice-create" btnText="Save&nbsp;&amp;&nbsp;Next" />
+                <AppButtonPrimary link="/invoice-create" btnText="Save &amp; Next" />
               </Box>
             )}
           />
