@@ -19,8 +19,8 @@ function App() {
           <Route path="/invoice-item" element={<InvoiceItemPage />} />
           <Route path="/invoice-create" element={<InvoiceCreatePage />} />
           <Route path="/invoice-print" element={<InvoicePrintPage />} />
-          <Route path="/inv-login" element={<LoginPage />} />
-          <Route path="/inv-registration" element={<Registration />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/registration" element={<Registration />} />
           <Route path="/*" element={<NotFound/>} />
         </Routes> 
       </BrowserRouter>
