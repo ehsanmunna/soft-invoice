@@ -3,11 +3,12 @@ import AppTextInput from "../../components/FormElement/TextInput";
 import AppTextPassword from "../../components/FormElement/TextPassword";
 import FormBox from "../../components/Layout/FormBox";
 import FormContainer from "../../components/Layout/FormContainer";
+import PageContainer from "../../components/Layout/PageContainer";
 import AppLogo from "../../components/Media/Logo";
 
 function Registration() {
   return (
-    <>
+    <PageContainer>
       <div>
         <AppLogo src="" alt="Logo" />
       </div>
@@ -37,7 +38,7 @@ function Registration() {
           <p>already registared? please <AppLink href="/login" linkText="login" /></p>
         )}
       />
-    </>
+    </PageContainer>
   );
 }
 

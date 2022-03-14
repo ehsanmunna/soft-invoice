@@ -3,12 +3,13 @@ import AppTextInput from "../../components/FormElement/TextInput";
 import AppTextPassword from "../../components/FormElement/TextPassword";
 import FormBox from "../../components/Layout/FormBox";
 import FormContainer from "../../components/Layout/FormContainer";
+import PageContainer from "../../components/Layout/PageContainer";
 import AppLogo from "../../components/Media/Logo";
 import AppTitle from "../../components/Typography/Title";
 
 function LoginPage() {
   return (
-    <>
+    <PageContainer>
       <div>
         <AppLogo src="" alt="Logo" />
       </div>
@@ -25,11 +26,12 @@ function LoginPage() {
           </>
         )}
         buttonText="Login"
+        btnEvent={console.log('login clicked')}
         formExtra={(
-          <p>Not registared? please <AppLink href="/reg" linkText="click here" /></p>
+          <p>Not registared? please <AppLink href="/registration" linkText="click here" /></p>
         )}
       />
-    </>
+    </PageContainer>
   );
 }
 

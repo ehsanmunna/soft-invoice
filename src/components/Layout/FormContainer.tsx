@@ -7,26 +7,28 @@ import PageContainer from "./PageContainer";
 
 const FormContainer = (props: any) => {
   return (
-  <PageContainer>
-    <div>
-      {props.formHeadLine ? <div style={{textAlign: 'center'}}>
-        <AppTitle name={props.formHeadLine} />
-      </div> : <></>}
-      {props.formSubHeadLine ? 
-      <AppSubTitle name={props.formSubHeadLine} />
-      : <></>}
-      <form>
-        {props.formBody}
-      </form>
+    // <PageContainer>
+    <>
+      <div>
+        {props.formHeadLine ? <div style={{ textAlign: 'center' }}>
+          <AppTitle name={props.formHeadLine} />
+        </div> : <></>}
+        {props.formSubHeadLine ?
+          <AppSubTitle name={props.formSubHeadLine} />
+          : <></>}
+        <form>
+          {props.formBody}
+        </form>
+        <FormBox>
+          {props.buttonText ? <AppButtonPrimary btnText={props.buttonText} handleOnClick={props.btnEvent} /> : <></>}
+          {props.buttonExtra}
+        </FormBox>
+      </div>
       <FormBox>
-        {props.buttonText ? <AppButtonPrimary btnText={props.buttonText} /> : <></>}
-        {props.buttonExtra}
+        {props.formExtra}
       </FormBox>
-    </div>
-    <FormBox>
-      {props.formExtra}
-    </FormBox>
-  </PageContainer>
+    </>
+    // </PageContainer>
   )
 };
 

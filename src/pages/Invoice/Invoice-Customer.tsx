@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import AppButtonPrimary from "../../components/Actions/PrimaryButton";
+import AppLinkButtonPrimary from "../../components/Actions/PrimaryLinkButton";
 import AppAutocomplete from "../../components/FormElement/Autocomplete";
 import AppTextArea from "../../components/FormElement/TextArea";
 import AppTextInput from "../../components/FormElement/TextInput";
@@ -42,10 +43,10 @@ function InvoiceCustomerPage() {
               </>
             )}
             buttonExtra={(
-              <Box sx={{ display: 'flex', gap: 5 }}>
+              <Box sx={{ display: 'flex', gap: 1 }}>
                 <AppButtonPrimary btnText="Cancle" />
                 {/* <AppButtonPrimary onClick={handleOnClick} btnText="Next" /> */}
-                <AppButtonPrimary link="/invoice-item" btnText="Next" />
+                <AppLinkButtonPrimary href="/invoice-item" linkText="Next" />
               </Box>
             )}
           />
