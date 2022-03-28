@@ -16,7 +16,7 @@ function InvoicePrintPage() {
   
   return (
     <>
-      <PageContainer>
+      {/* <PageContainer> */}
         <>
         <Box style={{paddingBottom: 20}}>
           <InvoiceHead 
@@ -55,7 +55,7 @@ function InvoicePrintPage() {
             <AppButtonPrimary btnText="Print" />
           </Box>
         </>
-      </PageContainer>
+      {/* </PageContainer> */}
     </>
   );
 }

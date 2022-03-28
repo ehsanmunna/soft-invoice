@@ -12,7 +12,7 @@ import PageContainer from "../../components/Layout/PageContainer";
 function InvoiceItemPage() {
   return (
     <>
-      <PageContainer>
+      {/* <PageContainer> */}
         <>
           <InvoiceHead 
             companyName="Company Name"
@@ -56,7 +56,7 @@ function InvoiceItemPage() {
             )}
           />
         </>
-      </PageContainer>
+      {/* </PageContainer> */}
     </>
   );
 }

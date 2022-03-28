@@ -24,8 +24,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test1": "react-scripts test",
-    "test": "jest",
+    "test": "react-scripts test",
+    "test1": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -50,6 +50,7 @@
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
+    "@types/react-test-renderer": "^17.0.1",
     "babel-jest": "^27.5.1",
     "jest": "^27.5.1",
     "react-test-renderer": "^17.0.2"

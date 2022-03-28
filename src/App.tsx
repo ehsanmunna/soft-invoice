@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import LoginPage from './pages/Login/Login';
 import Registration from './pages/Registration/Registration';
 import NotFound from './pages/NotFound/NotFound';
@@ -10,6 +10,7 @@ import InvoiceCreatePage from './pages/Invoice/Invoice-Create';
 import InvoicePrintPage from './pages/Invoice/Invoice-Print';
 
 function App() {
+  // const navigate = useNavigate();
   return (
     <div>
       <BrowserRouter>
